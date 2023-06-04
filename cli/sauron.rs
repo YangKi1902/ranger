@@ -14,7 +14,7 @@ use hex_literal::hex;
 use maplit::btreemap;
 use ranger::relay::{MempoolListener, P2PRelay};
 use ruint::uint;
-use secp256k1::key::{PublicKey, SecretKey, SECP256K1};
+use secp256k1::{PublicKey, SecretKey, SECP256K1};
 use std::{collections::HashMap, convert::TryInto};
 use std::{num::NonZeroUsize, path::PathBuf, str::FromStr, sync::Arc, time::Duration};
 use task_group::TaskGroup;
