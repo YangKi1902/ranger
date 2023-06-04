@@ -234,7 +234,7 @@ async fn main() -> anyhow::Result<()> {
     let status = Status {
         version: EthVersion::Eth67 as u8,
         chain: Chain::Id(1),
-        total_difficulty: uint!(36206751599115524359527_U256),
+        total_difficulty: uint!(36206751599115524359527),
         blockhash: hex!("feb27336ca7923f8fab3bd617fcb6e75841538f71c1bcfc267d7838489d9e13d"),
         genesis: hex!("d4e56740f876aef8c010b86a40d5f56745a118d0906a34e69aec8c0db1cb8fa3"),
         forkid: Hardfork::Latest.fork_id(),
