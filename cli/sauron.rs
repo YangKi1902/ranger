@@ -75,14 +75,14 @@ pub struct Opts {
     #[clap(long, default_value = "2500")]
     pub max_peers: NonZeroUsize,
     /// Disable DNS and UDP discovery, only use static peers.
-    #[clap(long, takes_value = false)]
+    #[clap(long, default_value = false)]
     pub no_discovery: bool,
     /// Disable DNS discovery
-    #[clap(long, takes_value = false)]
+    #[clap(long, default_value = false)]
     pub no_dns_discovery: bool,
     #[clap(long)]
     pub peers_file: Option<PathBuf>,
-    #[clap(long, takes_value = false)]
+    #[clap(long, default_value = false)]
     pub tokio_console: bool,
 }
 
