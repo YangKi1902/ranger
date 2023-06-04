@@ -28,7 +28,7 @@ hex = { version = "0.4" }
 
 devp2p-rs = { git = "https://github.com/YangKi1902/devp2p-rs" }
 ethereum-forkid = { version = "0.11.0", default-features = false }
-ethp2p = { git = "https://github.com/rjected/ethp2p" }
+ethp2p = { git = "https://github.com/YangKi1902/ethp2p" }
 anvil-core = { git = "https://github.com/foundry-rs/foundry" }
 open-fastrlp = { version = "0.1.4", features = ["alloc", "derive", "std"] }
 ethers = { git = "https://github.com/gakonst/ethers-rs", features = ["abigen", "legacy", "ws"] }
