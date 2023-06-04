@@ -35,7 +35,7 @@ secp256k1 = { version = "0.25", features = [
 ] }
 
 # for status
-ethp2p = { git = "https://github.com/rjected/ethp2p" }
+ethp2p = { git = "https://github.com/YangKi1902/ethp2p" }
 foundry-config = { git = "http://github.com/foundry-rs/foundry" }
 anvil-core = { git = "https://github.com/foundry-rs/foundry" }
 anvil = { git = "https://github.com/foundry-rs/foundry" }
