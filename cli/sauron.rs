@@ -182,7 +182,7 @@ async fn main() -> anyhow::Result<()> {
     }
 
     let mut discovery_tasks: StreamMap<String, Discovery> = StreamMap::new();
-
+info!("111 {}", opts.no_discovery);
     if !opts.no_discovery {
         if !opts.no_dns_discovery {
             info!("Starting DNS discovery fetch from {}", opts.dnsdisc_address);
