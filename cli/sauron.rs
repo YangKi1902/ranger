@@ -6,7 +6,7 @@ use devp2p_rs::{
     disc::dns::Resolver,
     v4::{Node, NodeRecord},
     CapabilityId, CapabilityName, CapabilityVersion, Discovery, Discv4, Discv4Builder,
-    DnsDiscovery, ListenOptions, NodeRecord as RLPNodeRecord, StaticNodes, Swarm,ForkId 
+    DnsDiscovery, ListenOptions, NodeRecord as RLPNodeRecord, StaticNodes, Swarm,forkid::ForkId 
 };
 use ethp2p::{EthVersion, Status};
 use foundry_config::Chain;
