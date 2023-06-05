@@ -240,8 +240,8 @@ async fn main() -> anyhow::Result<()> {
         genesis: hex!("d4e56740f876aef8c010b86a40d5f56745a118d0906a34e69aec8c0db1cb8fa3"),
         //forkid: Hardfork::Latest.fork_id(),
 	forkid: ForkId {
-                hash: Hardfork::Latest.fork_id().hash,
-                next: Hardfork::Latest.fork_id().next,
+                hash: ForkHash([0xc1, 0xfd, 0xf1, 0x81]),
+                next: 0,
             },
     };
 
