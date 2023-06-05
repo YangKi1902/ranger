@@ -6,9 +6,10 @@ use devp2p_rs::{
     disc::dns::Resolver,
     v4::{Node, NodeRecord},
     CapabilityId, CapabilityName, CapabilityVersion, Discovery, Discv4, Discv4Builder,
-    DnsDiscovery, ListenOptions, NodeRecord as RLPNodeRecord, StaticNodes, Swarm,forkid::ForkId 
+    DnsDiscovery, ListenOptions, NodeRecord as RLPNodeRecord, StaticNodes, Swarm
 };
 use ethp2p::{EthVersion, Status};
+use ethp2p::forkid::ForkId;
 use foundry_config::Chain;
 use hex_literal::hex;
 use maplit::btreemap;
