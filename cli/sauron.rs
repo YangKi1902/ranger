@@ -291,7 +291,12 @@ async fn main() -> anyhow::Result<()> {
             );
             counter = 0;
         }
-
+	info!(
+                "Peer info: {} active (+{} dialing) / {} max.",
+                swarm.connected_peers(),
+                swarm.dialing(),
+                opts.max_peers
+            );
         while let Some(hash) = hashes_stream.next().await {
             info!("New tx hash! {:?}", hex::encode(hash.unwrap()))
         }
