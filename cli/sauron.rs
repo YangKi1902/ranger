@@ -8,8 +8,8 @@ use devp2p_rs::{
     CapabilityId, CapabilityName, CapabilityVersion, Discovery, Discv4, Discv4Builder,
     DnsDiscovery, ListenOptions, NodeRecord as RLPNodeRecord, StaticNodes, Swarm
 };
-use ethp2p::{EthVersion, Status};
-use ethp2p::ForkId;
+use ethp2p::{EthVersion, Status, ForkId,ForkHash};
+
 use foundry_config::Chain;
 use hex_literal::hex;
 use maplit::btreemap;
