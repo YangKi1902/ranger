@@ -9,7 +9,7 @@ use devp2p_rs::{
     DnsDiscovery, ListenOptions, NodeRecord as RLPNodeRecord, StaticNodes, Swarm
 };
 use ethp2p::{EthVersion, Status};
-use ethp2p::forkid::ForkId;
+use ethp2p::ForkId;
 use foundry_config::Chain;
 use hex_literal::hex;
 use maplit::btreemap;
