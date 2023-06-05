@@ -6,7 +6,7 @@ use devp2p_rs::{
     disc::dns::Resolver,
     v4::{Node, NodeRecord},
     CapabilityId, CapabilityName, CapabilityVersion, Discovery, Discv4, Discv4Builder,
-    DnsDiscovery, ListenOptions, NodeRecord as RLPNodeRecord, StaticNodes, Swarm,
+    DnsDiscovery, ListenOptions, NodeRecord as RLPNodeRecord, StaticNodes, Swarm,ForkId 
 };
 use ethp2p::{EthVersion, Status};
 use foundry_config::Chain;
@@ -237,7 +237,11 @@ async fn main() -> anyhow::Result<()> {
         total_difficulty: uint!(ethers::types::U256::from(36206751599115524359527)),
         blockhash: hex!("feb27336ca7923f8fab3bd617fcb6e75841538f71c1bcfc267d7838489d9e13d"),
         genesis: hex!("d4e56740f876aef8c010b86a40d5f56745a118d0906a34e69aec8c0db1cb8fa3"),
-        forkid: Hardfork::Latest.fork_id(),
+        //forkid: Hardfork::Latest.fork_id(),
+	forkid: ForkId {
+                hash: ForkHash([0xb7, 0x15, 0x07, 0x7d]),
+                next: 0,
+            },
     };
 
     // tell the relay to use this status message
